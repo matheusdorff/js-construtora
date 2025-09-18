@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Construtora</title>
+  <link rel="shortcut icon" href="img/Logo_JS.jpg" type="image/x-icon">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #1a2a44;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    nav {
+      background: #142033;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #1a2a44;
+    }
+
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #1a2a44;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>JS Construtora</h1>
+    <p>Construindo com qualidade e confiança</p>
+  </header>
+
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sobre -->
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+      A <strong>JS Construtora</strong> é uma empresa comprometida em oferecer soluções completas 
+    e de qualidade no setor da construção civil. Atuamos com seriedade, 
+    transparência e dedicação, sempre buscando superar as expectativas 
+    dos nossos clientes.
+    <br> <br>
+    A equipe da <strong>JS Construtora</strong> é formada por profissionais qualificados 
+    e comprometidos em cada detalhe de sua obra. Trabalhamos com dedicação, 
+    responsabilidade e foco na excelência, garantindo que cada projeto 
+    seja executado com a mais alta qualidade e dentro dos prazos estabelecidos.
+    </p>
+    <br>
+    <img src="./img/JS_1.jpg" alt="" width="190px" height="180px">
+    <img src="./img/equipe45.jpg" alt="" width="110px" height="180px">
+    <img src="./img/equipe111.jpg" alt="" width="210px" height="180px">
+    <img src="./img/equipe222.jpg" alt="" width="210px" height="180px">
+    <img src="./img/equipe333.jpg" alt="" width="110px" height="180px">
+    <img src="./img/equipe444.jpg" alt="" width="190px" height="180px">
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Construção de Obras</h3>
+        <img src="./img/obra125.jpg" alt="" height="190px" width="190px">
+        <img src="./img/obra234.jpg" alt="" height="190px" width="190px">
+        <p>Edificações residenciais e comerciais com alto padrão de qualidade.</p>
+      </div>
+      <div class="card">
+        <h3>Reformas</h3>
+        <img src="./img/reforma54.jpg" alt="" class="" height="403px">
+        <p>Modernização e ampliação de espaços, valorizando cada detalhe.</p>
+      </div>
+      <div class="card">
+        <h3>Gerenciamento</h3>
+        <img src="./img/JS.jpg" alt="">
+        <p>Acompanhamento completo de obras, garantindo prazos e resultados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="./img/reforma123.jpg" alt="" height="190px" width="190px">
+        <img src="./img/obra1233.jpg" alt="" height="190px" width="190px">
+        <p>Baleia - 2023</p>
+      </div>
+      <div class="card">
+        <img src="./img/ferragem77.jpg" alt="">
+        <p>Baleia - 2017</p>
+      </div>
+      <div class="card">
+        <img src="./img/reforma_praia.jpg" alt="" height="400px">
+        <p>São Sebastião - 2018</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact">
+    <h2>Contato</h2>
+    <p>📍 Endereço: Rua Piavu, Camburi, São Sebastião/SP</p>
+    <p>📞 Telefone: (12) 99783-3059</p>
+    <a href="mailto:jsjosenir4@gmail.com">E-mail: jsjosenir4@gmail.com</a>
+    <p>
+      <a href="https://wa.me/5512997833059" target="_blank">💬 Fale conosco no WhatsApp</a>
+    </p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 JS Construtora - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
